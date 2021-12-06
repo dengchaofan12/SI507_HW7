@@ -30,7 +30,7 @@ def find_titles(name):
         url_list.append(item["url"])
     return render_template('headline.html',name=name, list=titles, url_list=url_list)   
 
-@app.route('/image/<name>')
+@app.route('/images/<name>')
 def find_titles_with_image(name):
     url = 'https://api.nytimes.com/svc/topstories/v2/technology.json?'
     params = {"api-key": key}
